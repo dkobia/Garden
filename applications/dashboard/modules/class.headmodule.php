@@ -269,7 +269,8 @@ if (!class_exists('HeadModule', FALSE)) {
          
          // Loop through each string
          foreach ($this->_Strings as $String) {
-             $Head .= $String;
+            $Head .= $String;
+            $Head .= "\n";
          }
          
          return $Head;
