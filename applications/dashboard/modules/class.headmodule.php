@@ -266,6 +266,12 @@ if (!class_exists('HeadModule', FALSE)) {
 
             $Head .= "\n";
          }
+         
+         // Loop through each string
+         foreach ($this->_Strings as $String) {
+             $Head .= $String;
+         }
+         
          return $Head;
       }
    }
